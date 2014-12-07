@@ -24,6 +24,11 @@ var resources = {
             "topic": "Go",
             "description": 'An Introduction to Programming in Go',
             "url": "http://www.golang-book.com/"
+        },
+        {
+            "topic": "Dust",
+            "description": "Linkedin Dustjs Wiki",
+            "url": "https://github.com/linkedin/dustjs/wiki/Dust-Tutorial"
         }
     ]
 };
