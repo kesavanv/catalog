@@ -1,7 +1,7 @@
 var resources = {
     "coding": [
         {
-            "topic": "javascript",
+            "topic": "Javascript",
             "description": "Learning JavaScript Design Patterns",
             "url" : "http://addyosmani.com/resources/essentialjsdesignpatterns/book/"
         },

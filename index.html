@@ -4,9 +4,6 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
         <link rel="stylesheet" href="style.css">
 
         <!-- Latest compiled and minified JavaScript -->
@@ -42,11 +39,6 @@
         <script type="text/javascript">
             var source = $("#some-template").html(); 
             var template = Handlebars.compile(source); 
-
-            Handlebars.registerHelper('fullName', function(person) {
-              return person.firstName + " " + person.lastName;
-            });
-
             $('body').append(template(resources));
         </script>
     </body>
