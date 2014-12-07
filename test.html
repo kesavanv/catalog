@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Handlebars Demo</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <h1>Resources</h1>
+        <script id="some-template" type="text/x-handlebars-template"> 
+            <ul>
+            {{#coding}}
+                <li>
+                    <a href="{{url}}" title="{{topic}}">{{language}}</a>
+                </li>
+            {{/coding}}
+            </ul>
+        </script>
+        
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="./handlebars-v2.0.0.js"></script>
+        <script type="text/javascript" src="./data.js"></script>
+        <script type="text/javascript">
+            var source = $("#some-template").html(); 
+            var template = Handlebars.compile(source); 
+
+            Handlebars.registerHelper('fullName', function(person) {
+              return person.firstName + " " + person.lastName;
+            });
+
+            $('body').append(template(resources));
+        </script>
+    </body>
+</html>
