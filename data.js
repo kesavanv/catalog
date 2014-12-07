@@ -35,6 +35,11 @@ var resources = {
         "url": "http://www.nodebeginner.org/"
     },
     {
+        "language": "BackboneJs",
+        "topic": "BackboneJs",
+        "url": "http://addyosmani.github.io/backbone-fundamentals/"
+    },
+    {
         "language": "javascript",
         "topic": "Design Patterns",
         "url" : "http://addyosmani.com/resources/essentialjsdesignpatterns/book/"
